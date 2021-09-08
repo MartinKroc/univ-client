@@ -1,0 +1,17 @@
+.top-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2%;
+}
+
+.news-container {
+  min-width: 300px;
+  border: 2px solid;
+  margin: auto;
+}
+
+.tools-container {
+  min-width: 200px;
+  border: 2px solid;
+  margin-right: 1%;
+}

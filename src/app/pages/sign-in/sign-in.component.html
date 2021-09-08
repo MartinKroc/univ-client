@@ -1,0 +1,21 @@
+<div class="top-container">
+  <h2>Logowanie</h2>
+</div>
+<div class="top-container">
+  <form class="login-form" [formGroup]="loginFormGroup">
+    <mat-form-field class="example-full-width" appearance="fill">
+      <mat-label>Email</mat-label>
+      <input type="email" matInput formControlName="login" placeholder="Ex. pat@example.com">
+      <mat-error *ngIf="loginFormGroup.hasError('email') && !loginFormGroup.hasError('required')">
+        Please enter a valid email address
+      </mat-error>
+      <mat-error *ngIf="loginFormGroup.hasError('required')">
+        Email is <strong>required</strong>
+      </mat-error>
+    </mat-form-field>
+    <mat-form-field class="example-full-width" appearance="fill">
+      <mat-label>Hasło</mat-label>
+      <input type="password" matInput formControlName="password">
+    </mat-form-field>
+  </form>
+</div>
